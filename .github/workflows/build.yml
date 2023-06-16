@@ -5,24 +5,24 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DIR: .
-      FILE: cv-pt
-      FILE-ENG: cv-en
+      FILE: resume-pt
+      FILE-ENG: resume-en
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
-      - name: cv
+      - name: resume
         uses: dante-ev/latex-action@latest
         with:
           root_file: ${{ env.FILE }}
           working_directory: ${{ env.DIR }}
-      - name: cv-en
+      - name: resume-en
         uses: dante-ev/latex-action@latest
         with:
           root_file: ${{ env.FILE-ENG }}
           working_directory: ${{ env.DIR }}
-      - name: move pt cv
+      - name: move pt resume
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
-      - name: move en cv
+      - name: move en resume
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE-ENG }}.pdf ./github_artifacts/
       - name: Upload pdfs as artifact
         uses: actions/upload-artifact@v3
