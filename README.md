@@ -1,3 +1,3 @@
-[cv (pt)](https://flpdorea.github.io/resume/cv-pt.pdf)
+[🇧🇷 Currículo (pt-BR)](https://flpdorea.github.io/resume/cv-pt.pdf)
 
-[cv (en)](https://flpdorea.github.io/resume/cv-en.pdf)
+[🇺🇸 Resume (en-US)](https://flpdorea.github.io/resume/cv-en.pdf)
